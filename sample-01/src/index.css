@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* src/index.css */
+:root {
+  --color-primary: #5e4ae3;       /* violet foncé */
+  --color-secondary: #eaafc8;     /* rose clair */
+  --color-bg: #f8f9fa;            /* gris très clair */
+  --color-text: #2c2f3a;          /* gris foncé */
+  --radius: 0.5rem;
+  --spacing: 1rem;
+  --font-main: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* reset basique */
+* {
+  margin:0; padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+/* Titres */
+h1,h2,h3,h4 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+/* Boutons */
+.btn {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: white;
+}
+.btn-danger {
+  background: #e63946;
+  color: white;
+}
+.btn-success {
+  background: #2a9d8f;
+  color: white;
+}
+
+/* Cartes */
+.card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+/* Formulaires */
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: var(--spacing);
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: var(--spacing) auto;
+  padding: 0 var(--spacing);
+}
